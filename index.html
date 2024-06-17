@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script src="./script.js"></script>
+    <header id="header">
+        <h1>Test your knowledge</h1>
+        <hr>
+    </header>
+    <main>
+        <div id="div1" class="on">
+            <div id="quiz-container">
+                <div class="section" data-section="0" onclick="startQuiz('0')">General Knowledge</div>
+                <div class="section" data-section="1" onclick="startQuiz('1')">Science</div>
+                <div class="section" data-section="2" onclick="startQuiz('2')">Mathematics</div>
+                <div class="section" data-section="3" onclick="startQuiz('3')">Indian History</div>
+              </div>
+              <div id="question-container" style="display: none">
+                <div id="question"></div>
+                <div id="options"></div>
+                <p id="message"></p>
+                <button id="next-button" onclick="gonext()">Next</button>
+              </div>
+              <div id="scoreContainer" style="display: none;">
+                <img id="img" src="" alt="">
+                  <h2>Quiz Completed</h2>
+                  <p id="score" style="margin-top: 4px;">Score:0</p>
+                  <button id="goback" onclick="goHome()">Go home</button>
+              </div>
+              <script src="./script.js"></script>
+        </div>
+        <div id="div2">
+            <img src="https://as2.ftcdn.net/v2/jpg/00/53/28/85/1000_F_53288559_asesBQuUxBlEVLPX2vfZ0mmgKO8fDxle.jpg" alt="">
+        </div>
+    </main>
+  </body>
+</html>
