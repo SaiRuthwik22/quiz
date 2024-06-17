@@ -215,6 +215,14 @@ hr{
     justify-content: center;
     align-items: center;
   }
+@media  screen and (max-width:750px) {
+  #div2{
+    display: none;
+  }
+  #div1{
+    width: 100%;
+  }
+}
 
 /* body,
 html {
